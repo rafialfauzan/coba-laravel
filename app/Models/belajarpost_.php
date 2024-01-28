@@ -4,7 +4,7 @@ namespace App\Models;
 
 use PhpParser\Node\Stmt\Foreach_;
 
-class Post
+class belajarpost
 {
     private static $blog_post = [
         [
