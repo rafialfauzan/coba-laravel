@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('isi')
-    <h1>Halaman Post</h1><br>
+    <h1>{{ $title }}</h1><br>
     @foreach ($posts as $post)
     <article class="mb-5 border-bottom pb-3">
         <h2><a href="/posts/{{ $post->slug }}" class="text-decoration-none">{{ $post->title }}</a></h2>
