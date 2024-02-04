@@ -17,9 +17,10 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->string('title');
             $table->string('slug')->unique();
+            $table->string('image')->nullable();
             $table->text('exerpt');
             $table->text('body');
-            $table->timestamp('published_at')->nullable;
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }
